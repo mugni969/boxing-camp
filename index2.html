@@ -1,0 +1,165 @@
+<html>
+	<head>
+		<title>CSS Website Layout</title>
+		<style>
+			body{
+				margin: 0;
+			}
+			/*style head*/
+			.header{
+				background-color: darkred;
+				padding: 20px;
+				text-align: center;
+			}
+			/* merubah warna pas kursor di meneyntuh link*/
+			.topnav a:hover{
+				background-color: #ddd;
+				color: black;
+			}
+			.topnav a{
+				float:left;
+				display: block;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			*{
+				box-sizing: border-box;
+			}
+			/* style the top navigation bar*/
+
+			.topnav{
+				overflow: hidden;
+				background-color: #333;
+			}
+			.column{
+				float: left;
+				width: 33.33%;
+				padding: 15px;
+			}
+			.row::after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			body{
+				font-family: Arial;
+				padding: 10px;
+				background: white;
+			}
+			.header h1{
+				font-size: 50px;
+			}
+			.leftcolumn{
+				float: left;
+				width: 75%;
+			}
+			.rightcolumn{
+				float: left;
+				width: 25%;
+				background-color: #yellow;
+				padding-left: 20px;
+			}
+			.fakeimg {
+				background-color: #aaa;
+				width: 100%;
+				padding: 20px;
+			}
+			.card{
+				background-color: #f1f1f1;
+				padding: 20px;
+				margin-top: 20px;
+			}
+			.footer{
+				padding: 20px;
+				text-align: center;
+				background: white;
+				margin_top:20px;
+			}
+			@media screen and (max-width:800px){
+				.leftcolumn,.rightcolumn{
+					width: 100%;
+					padding: 0;
+				}
+			}
+			@media screen and (max-width:400px){
+				.topnav a{
+					float: none;
+					width: 100%;h
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>boxing</h1>
+			<p>pemaini boxing internasional</p>
+		</div>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="piala.html">Tropies</a>
+			<a href="kontak.html">Contact</a>
+			<a href="#" style="float: right;">Tropies</a>
+		</div>
+		<div class="row">
+	<div class="leftcolumn">
+		<div class="card">
+			<h2>ryan garcia </h2>
+			<h5>data karir ryan garcia</h5>
+            <img src="ryaaan.jpg"width="70%">
+			<h2>Beranjak remaja</h2>
+			<p> ryan garcia adalah petinju profesional amerika dia memegang  gelar kelas ringan sementara dewan tinju dunia pada tahun 2021
+			ryan garcia di kenal di kalangan petinju kelas ringan dengan kemampuan tinjunya yang luar biasa kelahiran 8 agustus 1998(usia 25 tahun).</p><br>
+            <h2>Kemenangan yang di raih ryan garcia </h2>
+<p>hasil akhir pertarungan tinju dunia ini juri memeberinya kemenangan drastis dengan angka mayoritas dengan skor, 112-112,114-110,115-109.</p>
+		</div>
+		<div class="card">
+			<h2>Gervonta Davis</h2>
+			<p>Gervonta Davis merupakan salah satu petinju top masa kini dirinya mempunyai rekor kemenangan fatanstis,29kemenangan tanpa kekalahan dengan 27 menang KO.Davis sudah menjuarai sabuk juara di tiga kelas berberda,yakni IBF super featherweight,WBA super featherweight,dan WBA lightweight.</p>
+            <img src="davis.jpg" width="70%"><br><br>
+			<h2></h2>
+             <p>  </p>
+			<p></p>
+	</div>
+	<div class="card">
+			<h2>pertandingan antara Ryan Garcia vs Gervonta Davis</h2>
+			<p> Duel tinju dunia trakhir Gervonta Davis terjadi pada 22 april 2023, di tv mobile arena,las vegas.Saat itu davis menang-KO Ryaan Garcia ronde 7.pertarungan Gervonta Davis (29-0-0,27 ko) Juara di 3 kelas berbeda, dengan frank martin digelar untuk mempertahankan gelar kelas ringan WBA.  </p>
+
+			<img src="vs.jpg" width="70%">
+			<p>Kekalahan Ryaan Garcia</p>
+			<p>juara kelas ringan WBA (reguler).Gervonta Davis mengalahkan RYan Garcia di ronde ke tujuh dengan pukulan tubuh ke perut kanan Ryaan Garcia .</p>
+	</div>
+<div class="card">
+			<h2>Boxing</h2>
+			<p> Boxing adalah salah satu cabang beladiri 1 lawan 1 untuk melakukan serangan dengan cara memukul memakai tangan yang di beri sarung serta melindunfi diri dari pukulan yang di berikan oleh lawan dalam rangkaian pertandingan dengan jangka waktu tiga menit yang di sebut ronde. </p>
+
+			<img src="boxing.jpg" width="70%">
+		
+	</div>
+</div>
+<div class="rightcolumn">
+	<div class="card">
+		<h2>MIKE Tyson</h2>
+		<img src="mike.jpg"width="120%">
+		<p>Legenda Tinju Mike Tyson.</p>
+	</div>
+	<div class="card">
+		<h3>Populer post</h3>
+		<div class="fakeimg"><p>image</p></div>
+		<div class="fakeimg"><p>image</p></div>
+		<div class="fakeimg"><p>image</p></div>
+	</div>
+	<div class="card">
+		<h3>Follow me</h3>
+		<p> instagram @ me_gyii.</p>
+	</div>
+</div>
+</div>
+
+<div class="footer">
+	<h2>footer</h2>
+</div>
+	</body>
+</html>
