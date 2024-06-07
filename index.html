@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Website Layout</title>
+	<style>
+body {
+	font-family: arial;
+	padding: 10px;
+	background-color: #f1f1f1;
+}
+
+/* Style the header */
+.header {
+         background-color: #333;
+         padding: 20px;
+         text-align: center;
+         color: white;
+        }
+
+/* change color on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 20px;
+	text-decoration: none;
+	background-color: ;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.topnav{
+	overflow: hidden;
+	background-color: darkslategray;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+	color: white;
+
+}
+
+.row::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.leftcolumn{
+	float: left;
+	width: 75%;
+}
+
+.rightcolumn{
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+
+.fakeimage{
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+
+}
+
+.card{
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.row::after{
+content: "";
+display: table;
+clear: both;
+}
+
+.footer{
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+
+@media screen and (max-width:800px) {
+	.leftcolumn,.rightcolumn{
+		width: 100%;
+		padding: 0;
+
+	}
+}
+
+@media screen and (max-width:400px) {
+	.leftcolumn,.rightcolumn{
+		width: 100%;
+		float: none;
+
+	}
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<h1>BOXING</h1>
+</div>
+
+<div class="topnav">
+	<a href="#">Home</a>
+	<a href="#">Menu</a>
+	<a href="#">Contact</a>
+</div>
+
+<div class="row">
+	<div class="leftcolumn">
+		<div class="card">
+			<h> Ryan garcia</h2>
+			<p> Ryan Garcia adalah petinju yang memegang rekor amatir 215-15 di tinju. Dia melakukan debut profesionalnya pada 9 Juni 2016, di Tijuana, California, di mana dia bertarung melawan Edgar Meza dan menang TKO. Di balik kariernya yang cemerlang, Ryan Garcia memiliki masalah kesehatan mental yang membuatnya sempat ingin pensiun dini dari tinju..</p>
+
+			<img src="garcia.jpg" width="100%">
+		
+			<p>KingRy sang raja yang kontroversial adalah juara sementara kelas ringan WBC dengan karier yang mengejutkan. Kontroversi Ryan Garcia mulai dari problem kesehatan mental, pengin pensiun dini, jadi petarung UFC.</p>
+
+		</div>
+		<div class="card">
+			<h2>Gervona Davis</h2>
+			<p>
+                           Karier petinju Gervonta Davis saat ini berada di puncaknya. Pasalnya, ia menyandang status sebagai petinju yang belum terkalahkan dari 29 laga profesional yang telah dilakoninya. Bahkan, pada 2023 ini, Davis sukses mengalahkan petinju Ryan Garcia yang memiliki rekor tak terkalahkan sebelumnya.Dikenal sebagai petinju yang memiliki gerakan agresif dan pukulan yang sangat kuat, Gervonta Davis punya kehidupan yang keras. Sebelum menjadi hebat seperti belakangan, masa kecilnya bisa dibilang kelam. Seperti apa perjalanan hidupnya sampai berkarier di ring tinju yang masyhur..</p>
+
+			<img src="davis.jpg" width="100%">
+		
+			<p>Gervonta Davis (/ dʒərˈvɒnteɪ / jər-VON-tay; lahir 7 November 1994), juga dikenal dengan julukannya " Tank ", adalah seorang petinju profesional Amerika. Dia telah memegang gelar kelas ringan Asosiasi Tinju Dunia (WBA) sejak 2023, setelah sebelumnya memegang versi Reguler dari 2019 hingga 2023..</p>
+	</div>
+</div>
+<div class="rightcolumn">
+	<div class="card">
+		<h2>MIKE TYSON</h2>
+		<img src="mike.jpg" width="100%">
+		<p>Michael Gerard Tyson lebih dikenal dengan nama Mike Tyson (lahir 30 Juni 1966, New York City, Amerika Serikat) adalah petinju profesional dan mantan juara kelas berat. Kariernya yang sangat menjanjikan terhambat oleh berbagai kasus kriminal. Julukan Mike Tyson secara internasional adalah "Iron Mike", merujuk pada postur tubuhnya yang kuat bagaikan besi. Beberapa media massa yang lain lebih suka menyebutnya sebagai "The Baddest Man on Earth", yang merujuk pada perangainya yang buruk, baik di dalam maupun di luar ring tinju. Sedangkan pers Indonesia lebih senang menyebut Tyson sebagai "Si Leher Beton" yang merujuk pada lingkaran leher Tyson pada masa jayanya yang ekstra besar dari ukuran normal, dan tampak begitu kokoh...</p>
+	</div>
+	<div class="card">
+		<h3>Populer post</h3>
+		<img src="sabuk ryn.jpg" width="100%">
+		<img src="sabuk davis.jpg" width="100%">
+		<img src="tyson.jpg" width="100%">
+	</div>
+	<div class="card">
+		<h3>Follow me</h3>
+		<p>instagram 
+		@ me_gyii.</p>
+	</div>
+</div>
+</div>
+
+<div class="footer">
+	<h2>footer</h2>
+</div>
+</body>
+</html>
